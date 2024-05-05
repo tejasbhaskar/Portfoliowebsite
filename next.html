@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .Back{
+    
+            color:red;
+            border: 2px solid brown;
+            width: 3.1%;
+        }
+        .Next{
+            display: flex;
+            color:red;
+            border: 2px solid brown;
+            width: 3%;
+            float: right;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(201, 216, 220);">
+    <center>
+        <h1 style="background-color: rgb(225, 94, 94); color:rgb(35, 30, 6);">Calculate Your(BMI) Body Mass Index</h1>
+    </center>
+  Enter you weight in(K.G):<input id="num1">
+  Enter your height in (Meter square):<input id="num2">
+  <button onclick="bmi()">click Here</button>
+  Result:<input id="result">
+  <h1>*Note</h1>
+  <h2>If your BMI below 18.5-:Underweight</h2>
+  <h2>If your BMI below 18.5-24.9-:Normal weight</h2>
+  <h2>If your BMI above 25.0-:Overweight</h2>
+  <center>
+  <h1 style="background-color: rgb(225, 94, 94); color:rgb(35, 30, 6);">Basic Calculater</h1>
+  </center>  
+  Enter First value:<input type="number"id="a">
+    <select id="operater">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    Enter Second value:<input type="number"id="b">
+<button onclick="calc()">Click Here</button>
+Result:<input  type="number"id="r">
+  <script>
+   function bmi(){
+    var a=Number(document.getElementById("num1").value);
+    var b=Number(document.getElementById("num2").value);
+    var c= a/b;
+    document.getElementById("result").value=c;
+    } 
+    function calc(){
+        var p=parseInt(document.getElementById("a").value);
+        var r=parseInt(document.getElementById("b").value);
+        var opr=(document.getElementById("operater").value);
+        var s;
+        switch(opr){
+            case "+":   
+            s=p+r;
+            break;
+            case "-":   
+            s=p-r;
+            break;
+            case "*":   
+            s=p*r;
+            break;
+            case "/":   
+            s=p/r;
+            break;
+            default:
+            document.write("Enterd default value")
+        }
+        document.getElementById("r").value=s;
+    }
+</script> 
+<div class="Back">
+    <button value="Back"><a href="Index.html">Back</a></button>
+    </div> 
+    <div class="Next">
+        <button value="Next"><a href="next.html">Next</a></button>
+        </div>
+
+</body>
+</html>

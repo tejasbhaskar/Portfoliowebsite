@@ -1,0 +1,149 @@
+body{
+    background-color:rgb(116, 211, 237);
+}
+
+
+.a1{
+    background-color: silver;
+    border: 2px solid black;
+    border-radius: calc(50%);
+    color:red;
+}
+.navbar{
+display: flex;
+list-style-type: none;
+margin: 5px;
+padding: 10px;
+background-color: black;
+color: white;
+border-radius: calc(100px);
+}
+.navbar li{
+    display: block;
+    padding: 15px;
+        
+
+}
+.navbar li:hover{
+    background-color: green;
+}
+.navbar li a{
+    color: white;
+}
+.img{
+    display: flex;
+border: 2px solid rgb(94, 108, 109);
+border-radius: calc(50%);
+justify-content: flex-end;
+justify-content: center;
+
+}
+.contact{
+    color:white;
+}
+.content{
+    display:flex;
+    text-align: left;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.icon a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50px;
+    
+}
+.icon a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+
+}.icon a:hover{
+    background-color: red;
+    transition: o.5s;
+}
+
+.icon a:hover{
+    color: green;
+    transition: 0.5s;
+}
+footer{display: flex;    
+    justify-content: center;
+margin: 0%;
+}
+.foot{
+    display: flex;
+    list-style-type: none;
+
+}
+.foot h2{
+margin: 40px;
+    color:black;
+text-size-adjust: 20px;
+}
+.foot h2 a:hover{
+    background-color: lime;
+}
+.ajay{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+@keyframes img{
+    from{
+        width:30px ;
+    }
+    to{
+        height: 30%;
+
+    }
+}
+.Back{
+    
+    color:red;
+    border: 2px solid brown;
+    width: 3.1%;
+}
+.Next{
+    display: flex;
+    color:red;
+    border: 2px solid brown;
+    width: 3%;
+    float: right;
+}
+.maindiv{
+    display: flex;
+    justify-content: center;
+
+}
+.div1{
+    display: flex;
+    background-color: rgb(132, 202, 67);
+width: 20%;
+height: 300px;
+align-items: center;
+justify-content: center;
+border: 2px solid magenta;
+}
+.div2{
+    display: flex;
+    background-color: rgb(228, 180, 35);
+width: 20%;
+height: 300px;
+align-items: center;
+justify-content: center;
+border: 2px solid rgb(224, 28, 182);
+}
+.div3{
+    display: flex;
+    background-color: rgb(221, 31, 114);
+width: 20%;
+height: 300px;
+align-items: center;
+justify-content: center;
+border: 2px solid magenta;
+}
